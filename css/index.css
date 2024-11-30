@@ -1,53 +1,214 @@
 @charset "UTF-8";
 
 .top{
-  margin-top: 75px;
-  display: block;
-  height: 370px;
-  width: 100%;
+  background-image: url(../img/top.png);
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  margin-top: 110px;
+  min-height: 390px;
   z-index: 0;
 }
 
-
 .top-wrap{
-  display: flex;
+  max-width: 1400px;
+  width: 85%;
+  height: 25vh;
   margin: 0 auto;
-  justify-content: space-between;
-  /* height: 370px; */
-  /* width: 100%; */
-}
-
-.top-wrap__left{
-  width: 100%;
 }
 
 .top-wrap__left__ttl{
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  margin-top: 40px;
-  margin-left: 50%;
+  margin-left: 17%;
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-wrap__left__ttl h1{
+  font-size: 2.25rem;
+  line-height: 1.3;
+  letter-spacing: 0.5px;
+}
+
+.news-wrap {
+  display: flex;
+}
+
+.__inner {
+  width: 53%;
+  margin: 0 auto;
+  padding: 7% 0;  /* ボックス内の余白。 */
+}
+
+.news-wrap__ttl {
+  width: 30%;  /* _innerで指定した60%の幅の30%を表示位置に指定 */
+  font-size: 2.25rem;
+}
+
+.f-btn a{
+  text-decoration: unset;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #9CC9E5;
+  border-radius: 30px;
+}
+
+.f-btn a:hover{
+  background-color: #fff;
+  color: #9CC9E5;
+  border: solid 2.5px #9CC9E5;
+}
+
+.s-ttl__1 {
+  display: inline-block;  /* ブロックの横幅は内部要素に依存するように設定 */
   font-size: 2rem;
+  color: #1D4763;
   line-height: 1.5;
 }
 
-.top-wrap__right{
-  background-image: url(../img/pixta_82707555.jpg);
-  background-size: 130%;
-  background-position: 100% 17%;
-  width: 1300px;
-  /* max-width: 700px; */
-  height: 370px;
-  object-fit: cover;
-  object-position: 100% 100%;
-  border-radius: 0 0 0 20px;
+.news-wrap__con {
+  width: 75%;  /* _innerで指定した80%の幅の75%を表示位置に指定 */
 }
 
-/* .top-wrap__right img{ */
-  /* width: 720px; */
-  /* height: 370px; */
-  /* object-fit: cover; */
-  /* object-position: -100px 50px; */
-/* } */
+.news-wrap__con__list__item {
+  display: flex;
+  align-items: center;  /* 要素の配置、上下中央 */
+  /* font-size: 1.15rem; */
+  border-bottom: solid 1.5px #3E3A3A;  /* スタイル　太さ　色 */
+  padding-top: 1.25%;
+  padding-bottom: 1.25%;
+}
+
+.news-wrap__con__list__item__date {
+  margin-left: 3.75%;
+  margin-right: 7%;  /* ボックス外の余白 */
+}
+
+.info{
+  background-image: url(../img/wave.png);
+  background-size: cover;
+  background-position: 50% 0;
+  position: relative;
+  min-height:50px;
+  z-index: 0;
+}
+
+.info-wrap {
+  text-align: center;
+}
+
+.info-wrap__ttl h2 {
+  font-size: 2rem;
+  color: #1D4763;
+  line-height: 1.5;
+}
+
+.info-wrap__body {
+  display: flex;  /* 3つのitemを横並び */
+  justify-content: space-between;  /* ブロック要素内で均等配置 */
+  margin: 0 5% 0.25%;
+  padding-top: 5%;
+}
+
+.info-wrap__body__item {
+  display: flex;  /* flex-directionを適用させるために指定 */
+  flex-direction: column;  /* column＝ブロック要素の並び順と同様になるように指定 */
+  width: 25%;
+  padding: 2.5%;
+}
+
+.info-wrap__body__item__icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 8.25rem;
+  height: 8.25rem;
+  margin: 0 auto;
+  display: flex;  /* icon内のi要素に対してフレックスボックスを指定 */
+  justify-content: center;  /* 横軸を基準に左右中央 */
+  align-items: center;  /* 縦軸を基準に上下中央 */
+}
+
+.info-wrap__body__item__icon i {
+  font-size: 4rem;
+  color: #AAABAB;
+}
+
+.info-wrap__body__item__ttl {
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.info-wrap__body__item__ttl h3 {
+  font-size: 1.15rem;
+}
+
+.greet {
+  background-color: #CAE5D3;
+}
+
+.__inner__sub {
+  display: flex;
+  /* justify-content:left; */
+  /* align-items:center; */
+  height: 420px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 7% 0;
+  bottom: 0px;
+  /* flex: none; */
+  margin: 0 0 0 0;
+  /* position: absolute; */
+  /* right: 50px; */
+  /* top: 0px; */
+  z-index: -1;
+}
+
+.__inner__sub::before{
+  /* position: absolute; */
+  content: "";
+  display: flex;
+  width: 93%;
+  /* height: 250px; */
+  object-fit: cover;
+  background-color: #fff;
+}
+
+.greet-wrap__item{
+  background-color: #fff;
+}
+
+.greet-wrap__left {
+  /* width: 100%; */
+  background-color: #fff;
+  margin-top: 5%;
+}
+
+.greet-wrap__left__ttl {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 3.5%;
+}
+
+.greet-wrap__left__txt {
+  margin-top: 3.5%;
+  font-size: 1rem;
+}
+
+.greet-wrap__right {
+  width: 45%;
+  aspect-ratio: 2/4;  /* 要素の縦横比、横/縦＝7/5 */
+}
+
+.greet-wrap__right img {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: 60% 0;
+  border-radius: 0 25px 25px 0;
+}
