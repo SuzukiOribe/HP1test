@@ -152,7 +152,7 @@
 
 .__inner__sub {
   display: flex;
-  height: 35vh;
+  height: 350px;
   width: 70%;
   margin: 0 auto;
   padding: 7% 0;
@@ -167,6 +167,12 @@
   width: 93%;
   object-fit: cover;
   background-color: #fff;
+}
+
+.__inner__sub:nth-of-type(2n) {
+  flex-direction: row-reverse;
+  margin-left: 0;
+
 }
 
 .greet-wrap__item{
@@ -185,7 +191,7 @@
 }
 
 .f-btn{
-  margin-top:10%;
+  margin-top:30px;
 }
 
 .greet-wrap__right {
@@ -233,4 +239,104 @@
   object-fit: cover;
   object-position: 50% 0;
   border-radius: 0 25px 25px 0;
+}
+
+.map {
+  background-color: #fff;
+}
+
+.map-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 53%;
+}
+
+.map-wrap__block{
+  width: 47%;
+  /* text-align: left; */
+}
+
+.map-wrap__block__logo img{
+  width: 100%;
+}
+
+.map-wrap__block__add p{
+  font-size: 1.25rem;
+}
+
+.map-wrap__block__tel{
+  display: flex;
+}
+
+.map-wrap__block__tel__icon {
+  background-color: #9CC9E5;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+  display: flex;
+  /* icon内のi要素に対してフレックスボックスを指定 */
+  justify-content: center;
+  /* 横軸を基準に左右中央 */
+  align-items: center;
+  /* 縦軸を基準に上下中央 */
+}
+
+.map-wrap__block__tel__icon i {
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+.map-wrap__block__tel{
+  font-size: 1.25rem;
+}
+
+.map-wrap__block__tel__time p{
+  display: inline-block;
+}
+
+
+
+
+
+.map-wrap__block__sche {
+  margin: 2.5%;
+}
+
+.map-wrap__block__sche table {
+  width: 100%;
+}
+
+.map-wrap__block__sche table tr:nth-of-type(1) {
+  background-color: #DFE2EA;
+}
+
+.map-wrap__block__sche table td{
+  border-right: solid 1px #ff1212;
+}
+
+.map-wrap__block__sche table tr:nth-of-type(2),
+.map-wrap__block__sche table tr:nth-of-type(3) {
+  border-bottom: solid 1px #DFE2EA;
+}
+
+.map-wrap__block__sche table th:first-child{
+  background-color: #DFE2EA;
+  border-right: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+}
+
+.map-wrap__block__sche table tr td{
+  border-right: solid 1px #DFE2EA;
+}
+
+
+
+.map-wrap__block__sche table tr th {
+  padding: 3px;
+}
+
+.map-wrap__block__sche table tr td {
+  padding: 3px;
 }
