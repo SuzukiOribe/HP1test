@@ -48,7 +48,7 @@
   font-size: 2.25rem;
 }
 
-.f-btn a{
+.btn a{
   text-decoration: unset;
   color: #fff;
   font-size: 1rem;
@@ -152,63 +152,85 @@
 
 .__inner__sub {
   display: flex;
-  /* justify-content:left; */
-  /* align-items:center; */
-  height: 420px;
+  height: 35vh;
   width: 70%;
   margin: 0 auto;
   padding: 7% 0;
   bottom: 0px;
-  /* flex: none; */
   margin: 0 0 0 0;
-  /* position: absolute; */
-  /* right: 50px; */
-  /* top: 0px; */
   z-index: -1;
 }
 
 .__inner__sub::before{
-  /* position: absolute; */
   content: "";
   display: flex;
   width: 93%;
-  /* height: 250px; */
   object-fit: cover;
   background-color: #fff;
 }
 
 .greet-wrap__item{
   background-color: #fff;
+  padding-right: 5%;
 }
 
 .greet-wrap__left {
-  /* width: 100%; */
   background-color: #fff;
   margin-top: 5%;
 }
 
-.greet-wrap__left__ttl {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.35;
-  margin-top: 3.5%;
+.greet-wrap__left__txt {
+  margin-top: 5%;
+  font-size: 1rem;
 }
 
-.greet-wrap__left__txt {
-  margin-top: 3.5%;
-  font-size: 1rem;
+.f-btn{
+  margin-top:10%;
 }
 
 .greet-wrap__right {
   width: 45%;
-  aspect-ratio: 2/4;  /* 要素の縦横比、横/縦＝7/5 */
+  aspect-ratio: 3/4;
 }
 
 .greet-wrap__right img {
   display: block;
   width: 100%;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
   object-position: 60% 0;
+  border-radius: 0 25px 25px 0;
+}
+
+.fea {
+  background-color: #CAE5D3;
+}
+
+.fea-wrap__item {
+  background-color: #fff;
+  padding-right: 5%;
+}
+
+.fea-wrap__left {
+  background-color: #fff;
+  margin-top: 5%;
+}
+
+.fea-wrap__left__txt {
+  margin-top: 5%;
+  font-size: 1rem;
+}
+
+.fea-wrap__right {
+  width: 45%;
+  aspect-ratio: 3/4;
+}
+
+.fea-wrap__right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 0;
   border-radius: 0 25px 25px 0;
 }

@@ -74,7 +74,7 @@ body{
 }
 
 .header-wrap__btn__list__web__web {
-  position: absolute;
+  position: relative;
   margin-top: -1%;
   color: #fff;
   font-size: 125%;
@@ -107,6 +107,12 @@ body{
   z-index: 1;
 }
 
+.header-wrap__btn__list__web__comment:hover {
+  color: #fff;
+  background-color: #9CC9E5;
+  border: solid 2px #fff;
+}
+
 .header-wrap__btn__list__web__comment::before{
   content: "";
   position: absolute;
@@ -133,6 +139,8 @@ body{
   rotate: 135deg;
   translate: -50%;
 }
+
+
 
 .header-wrap__btn__list__tel{
   margin-left: 7%;
