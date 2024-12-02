@@ -75,14 +75,11 @@ body{
 .header-wrap__btn__list__web a{
   text-decoration: unset;
   display: block;
-  transition: all;
+  margin-top: -40px;
 }
 
 .header-wrap__btn__list__web__web {
   position: relative;
-  top:-10px;
-  left: 10%;
-  margin-top: -1%;
   color: #fff;
   font-size: 125%;
   max-width: 120px;
@@ -93,15 +90,24 @@ body{
   z-index: 0;
 }
 
-.header-wrap__btn__list__web__web:hover{
-  color: #9CC9E5;
+.header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__web {
+  color: #9cc9e5;
   background-color: #fff;
-  border: solid 2px #9CC9E5;
+  border: solid 2px #9cc9e5;
+  transition: all 0.2s;
+}
+
+.header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__comment {
+  color: #fff;
+  background-color: #9CC9E5;
+  transition: all 0.2s;
 }
 
 .header-wrap__btn__list__web__comment {
-  position: relative;
-  margin-top: -30%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
   margin-left: 30%;
   white-space: nowrap;
   width: fit-content;
@@ -113,13 +119,6 @@ body{
   border-radius: 30px;
   background-color: #fff;
   z-index: 1;
-}
-
-
-.header-wrap__btn__list__web__comment:hover {
-  color: #fff;
-  background-color: #9CC9E5;
-  border: solid 2px #fff;
 }
 
 .header-wrap__btn__list__web__comment::before{
@@ -149,6 +148,20 @@ body{
   translate: -50%;
 }
 
+.header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__comment::before {
+  color: #fff;
+  background-color: #9CC9E5;
+  border: solid 2px #9CC9E5;
+  transition: all 0.2s;
+}
+
+.header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__comment::after {
+  color: #fff;
+  background-color: #9CC9E5;
+  border: solid 2px #9CC9E5;
+  transition: all 0.2s;
+}
+
 .header-wrap__btn__list__tel a{
   text-decoration: unset;
   display: block;
@@ -158,4 +171,127 @@ body{
 
 .header-wrap__btn__list__tel a:hover{
   color: #9CC9E5;
+}
+
+.footer{
+  background-color: #CAE5D3;
+  background-image: url(../img/wave.png);
+  background-size: cover;
+  background-position: 50% 0;
+  position: relative;
+  min-height: 50px;
+  z-index: 0;
+  padding: 7% 0;
+}
+
+.s-ttl__2{
+  font-size: 2.25rem;
+  font-family: "RocknRoll One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.footer-wrap__top{
+  display: flex;
+  justify-content: space-between;
+  width: 53%;
+  margin: 15px auto;
+}
+
+.footer-wrap__top__left {
+  width: 50%;
+  margin-right: 3%;
+  text-align: center;
+}
+
+.footer-wrap__top__left a {
+  width: 100%;
+  height: 100%;
+  background-color: #FF7E7E;
+  border: solid 2.5px #FF7E7E;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-wrap__top__left a:hover {
+  background-color: #CAE5D3;
+  color: #FF7E7E;
+  border: solid 2.5px #FF7E7E;
+}
+
+.footer-wrap__top__left a p {
+  font-size: 1.75rem;
+}
+
+.footer-wrap__top__right {
+  width: 50%;
+  margin-left: 3%;
+  /* text-align: center; */
+}
+
+.footer-wrap__top__right a{
+  width: 100%;
+  /* height: 100%; */
+  background-color: #fff;
+  border: solid 2.5px #fff;
+  color: #3E3A3A;
+  font-size: 1.75rem;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  border-radius: 5rem;
+  text-decoration: none;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.footer-wrap__top__right__time p {
+  display: inline-block;
+}
+
+.footer-wrap__top__right a:hover {
+  transform: scale(1.05);
+}
+
+.footer-wrap__top__right a i {
+  margin-right: 2.5%;
+}
+
+.footer-wrap__bottom {
+  font-size: 1rem;
+  width: 53%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrap__bottom__list__item {
+  margin: 12.5% 0;
+  color: #3E3A3A;
+  list-style: none;
+}
+
+.footer-wrap__bottom__list__item a {
+  color: #3E3A3A;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+.footer-wrap__bottom__list__item a:hover {
+  opacity: 0.7;
+}
+
+.footer-wrap__bottom__list__item__sub{
+  list-style: none;
+}
+
+.footer-wrap__bottom__list__item__sub__item{
+  margin: 7.5% 0;
+  font-size: 0.8rem;
 }

@@ -22,6 +22,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=RocknRoll+One&display=swap"
+    rel="stylesheet">
   <!-- CSS-内部 -->
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/common-main.css">
@@ -173,13 +177,13 @@
   <!-- </section> -->
 
     <!-- <section class="fea" id="fea"> -->
-      <div class="greet-wrap __inner__sub">
-        <div class="greet-wrap__item">
-          <div class="greet-wrap__left">
+      <div class="fea-wrap __inner__sub">
+        <div class="fea-wrap__item">
+          <div class="fea-wrap__left">
             <h2 class="s-ttl__1">
               当院の特徴
             </h2>
-            <p class="greet-wrap__left__txt">
+            <p class="fea-wrap__left__txt">
               専門医の強みを生かした、病気の早期発見・早期治療につながる内視鏡検査や超音波検査を行うことができます。
               診察結果は、画像などを使用しながら分かりやすく説明させていただきます。
             </p>
@@ -232,7 +236,7 @@
         </div>
         <div class="map-wrap__block__sche">
           <table>
-            <tr>
+            <tr class="date">
               <th>診療時間</th>
               <td>月</td>
               <td>火</td>
@@ -253,7 +257,7 @@
               <td>●</td>
             </tr>
             <tr>
-              <th>16:00-18:30</th>
+              <th class="pm">16:00-18:30</th>
               <td>●</td>
               <td>●</td>
               <td>●</td>
@@ -268,12 +272,136 @@
       <div class="map-wrap__block">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.0982389562355!2d136.08202467712462!3d35.00424587281316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600165b803835163%3A0xa3a82b7ed74fdbb7!2z5rmW5Y2X5biC5b255omAIOadseW6geiIjg!5e0!3m2!1sja!2sjp!4v1733032059708!5m2!1sja!2sjp"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
-  </main>
+
+
+
+<footer class="footer" id="footer">
+  <div class="footer-wrap">
+    <h3 class="s-ttl__2">
+      診察・予防接種　予約
+    </h3>
+    <div class="footer-wrap__top">
+      <div class="footer-wrap__top__left">
+        <a href="/">
+          <p>WEB予約</p>
+          <small>WEB受付時間：24時間</small>
+        </a>
+      </div>
+      <div class="footer-wrap__top__right">
+        <a href="tel:0000000000"><i class="fa-solid fa-phone"></i>00-0000-0000</a>
+        <div class="footer-wrap__top__right__time">
+          電話受付時間：
+          <p>平日　9:00-12:00、16:00-18:00</p>
+          <br>
+          　　　　　　　
+          <p>土曜　9:00-12:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrap__bottom">
+      <ul class="footer-wrap__bottom__list">
+        <li class="footer-wrap__bottom__list__item">
+          <a href="/">
+            TOP
+          </a>
+        </li>
+        <li class="footer-wrap__bottom__list__item">
+          <a href="news.html">
+            お知らせ
+          </a>
+        </li>
+        <li class="footer-wrap__bottom__list__item">
+          <a href="faq.html">
+            よくある質問
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-wrap__bottom__list">
+        <li class="footer-wrap__bottom__list__item">
+          <a href="info.html">
+            診療案内
+          </a>
+          <ul class="footer-wrap__bottom__list__item__sub">
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="info.html">
+                内科
+              </a>
+            </li>
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="info.html">
+                消化器内科
+              </a>
+            </li>
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="info.html">
+                予防接種
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="footer-wrap__bottom__list">
+        <li class="footer-wrap__bottom__list__item">
+          <a href="facility.html">
+            施設・設備
+          </a>
+          <ul class="footer-wrap__bottom__list__item__sub">
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="facility.html">
+                受付・待合室
+              </a>
+            </li>
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="facility.html">
+                診察室
+              </a>
+            </li>
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="facility.html">
+                使用機器
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="footer-wrap__bottom__list">
+        <li class="footer-wrap__bottom__list__item">
+          <a href="about.html">
+            当院について
+          </a>
+          <ul class="footer-wrap__bottom__list__item__sub">
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="about.html">
+                代表あいさつ
+              </a>
+            </li>
+            <li class="footer-wrap__bottom__list__item__sub__item">
+              <a href="about.html">
+                当院の特徴
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
+
+
+
+
+          
+        
+        </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
 </body>

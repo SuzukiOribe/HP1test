@@ -169,12 +169,6 @@
   background-color: #fff;
 }
 
-.__inner__sub:nth-of-type(2n) {
-  flex-direction: row-reverse;
-  margin-left: 0;
-
-}
-
 .greet-wrap__item{
   background-color: #fff;
   padding-right: 5%;
@@ -209,12 +203,7 @@
 }
 
 .fea {
-  background-color: #CAE5D3;
-}
-
-.fea-wrap__item {
-  background-color: #fff;
-  padding-right: 5%;
+  /* background-color: #CAE5D3; */
 }
 
 .fea-wrap__left {
@@ -239,6 +228,24 @@
   object-fit: cover;
   object-position: 50% 0;
   border-radius: 0 25px 25px 0;
+}
+
+.__inner__sub:nth-of-type(2n) {
+  flex-direction: row-reverse;
+  margin: 0 0 0 auto;
+}
+
+.__inner__sub:nth-of-type(2n) .f-btn{
+  margin-top: 80px;
+}
+
+.__inner__sub:nth-of-type(2n) .fea-wrap__item {
+  background-color: #fff;
+  padding-left: 5%;
+}
+
+.__inner__sub:nth-of-type(2n) .fea-wrap__right img {
+  border-radius: 25px 0 0 25px;
 }
 
 .map {
@@ -302,6 +309,7 @@
 
 .map-wrap__block__sche {
   margin: 2.5%;
+  text-align: center;
 }
 
 .map-wrap__block__sche table {
@@ -312,9 +320,6 @@
   background-color: #DFE2EA;
 }
 
-.map-wrap__block__sche table td{
-  border-right: solid 1px #ff1212;
-}
 
 .map-wrap__block__sche table tr:nth-of-type(2),
 .map-wrap__block__sche table tr:nth-of-type(3) {
@@ -331,7 +336,13 @@
   border-right: solid 1px #DFE2EA;
 }
 
+.map-wrap__block__sche .date table tr{
+  border-right: solid 1px #ff1212;
+}
 
+.pm table th{
+  border-bottom: solid 1px #ff1212;
+}
 
 .map-wrap__block__sche table tr th {
   padding: 3px;
