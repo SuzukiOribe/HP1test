@@ -1,1 +1,118 @@
 @charset "UTF-8";
+
+.info-wrap {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.info-wrap__body {
+  display: flex;
+  /* 3つのitemを横並び */
+  justify-content: space-between;
+  /* ブロック要素内で均等配置 */
+  margin: 0 5% 0.25%;
+  padding-top: 5%;
+}
+
+.info-wrap__body__item {
+  display: flex;
+  /* flex-directionを適用させるために指定 */
+  flex-direction: column;
+  /* column＝ブロック要素の並び順と同様になるように指定 */
+  width: 25%;
+  padding: 2.5%;
+}
+
+.info-wrap__body__item__icon {
+  background-color: #AAABAB;
+  border-radius: 50%;
+  width: 8.25rem;
+  height: 8.25rem;
+  margin: 0 auto;
+  display: flex;
+  /* icon内のi要素に対してフレックスボックスを指定 */
+  justify-content: center;
+  /* 横軸を基準に左右中央 */
+  align-items: center;
+  /* 縦軸を基準に上下中央 */
+}
+
+.info-wrap__body__item__icon i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.info-wrap__body__item__ttl {
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.info-wrap__body__item__ttl h3 {
+  font-size: 1rem;
+}
+
+.treat-wrap{
+  display: flex;
+  margin-left: 0;
+  width: 72%;
+  margin: 7% 0;
+}
+
+.treat-wrap__body__block{
+  /* margin-top: 3%; */
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  padding: 3.5% 0 0 0;
+}
+
+.treat-wrap__body__block__img{
+  width:245%;
+  aspect-ratio: 2 / 1;
+}
+
+.treat-wrap__body__block__img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 25px 25px 0;
+}
+
+.treat-wrap__body__block__txt{
+  margin-left: 5%;
+}
+
+.treat-wrap__body__block__txt__ttl{
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.treat-wrap__body__block__txt__ttl__icon{
+  margin-right: 15px;
+}
+
+
+.treat-wrap__body__block__txt i{
+  background-color: #CAE5D3;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  display: flex;
+  /* icon内のi要素に対してフレックスボックスを指定 */
+  justify-content: center;
+  /* 横軸を基準に左右中央 */
+  align-items: center;
+  /* 縦軸を基準に上下中央 */
+}
+
+.treat-wrap__body__block h4 {
+  font-size: 2rem;
+  color: #1D4763;
+}

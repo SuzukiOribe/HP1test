@@ -76,6 +76,7 @@ body{
   text-decoration: unset;
   display: block;
   margin-top: -40px;
+  position: relative;
 }
 
 .header-wrap__btn__list__web__web {
@@ -83,7 +84,7 @@ body{
   color: #fff;
   font-size: 125%;
   max-width: 120px;
-  padding: 0.75rem 1.25rem 0rem 2.25rem ;
+  padding: 0.4rem 1.25rem 0.2rem 2.25rem ;
   border: solid 2px#fff;
   border-radius: 30px ;
   background-color: #9CC9E5;
@@ -107,8 +108,7 @@ body{
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  margin-left: 30%;
+  transform: translateY(-40%) translateX(-50%);
   white-space: nowrap;
   width: fit-content;
   font-size: 70%;
@@ -173,6 +173,13 @@ body{
   color: #9CC9E5;
 }
 
+.__inner {
+  width: 53%;
+  margin: 0 auto;
+  padding: 7% 0;
+  /* ボックス内の余白。 */
+}
+
 .footer{
   background-color: #CAE5D3;
   background-image: url(../img/wave.png);
@@ -195,7 +202,7 @@ body{
 .footer-wrap__top{
   display: flex;
   justify-content: space-between;
-  width: 53%;
+  width: 50%;
   margin: 15px auto;
 }
 
@@ -263,12 +270,18 @@ body{
   margin-right: 2.5%;
 }
 
+.footer-wrap__top__right__time{
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
 .footer-wrap__bottom {
   font-size: 1rem;
-  width: 53%;
+  width: 50%;
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .footer-wrap__bottom__list__item {
@@ -292,6 +305,5 @@ body{
 }
 
 .footer-wrap__bottom__list__item__sub__item{
-  margin: 7.5% 0;
   font-size: 0.8rem;
 }
