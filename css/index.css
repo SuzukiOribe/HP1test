@@ -51,7 +51,7 @@
   border-radius: 30px;
 }
 
-.f-btn a:hover{
+.btn a:hover{
   background-color: #fff;
   color: #9CC9E5;
   border: solid 2.5px #9CC9E5;
@@ -331,7 +331,7 @@
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translateY(-40%) translateX(-150%);
+  transform: translateY(-40%) translateX(-140%);
   white-space: nowrap;
   width: fit-content;
   font-size: 70%;

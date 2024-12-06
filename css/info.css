@@ -56,7 +56,7 @@
   display: flex;
   margin-left: 0;
   width: 72%;
-  margin: 7% 0;
+  margin: 7% 0 13%;
 }
 
 .treat-wrap__body__block{
@@ -65,11 +65,11 @@
   /* justify-content: space-between; */
   /* align-items: center; */
   padding: 3.5% 0 0 0;
+  height: 320px;
 }
 
 .treat-wrap__body__block__img{
-  width:245%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 5 / 2;
 }
 
 .treat-wrap__body__block__img img{
@@ -87,8 +87,8 @@
 .treat-wrap__body__block__txt__ttl{
   display: flex;
   align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  margin-bottom: 7%;
 }
 
 .treat-wrap__body__block__txt__ttl__icon{

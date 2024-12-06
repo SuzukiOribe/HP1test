@@ -1,1 +1,116 @@
 @charset "UTF-8";
+
+.info-wrap {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 40%;
+}
+
+.info-wrap__body {
+  display: flex;
+  /* 2つのitemを横並び */
+  justify-content: space-between;
+  /* ブロック要素内で均等配置 */
+  margin: 0 5% 0.25%;
+  padding-top: 5%;
+}
+
+.info-wrap__body__item {
+  display: flex;
+  /* flex-directionを適用させるために指定 */
+  flex-direction: column;
+  /* column＝ブロック要素の並び順と同様になるように指定 */
+  width: 25%;
+  padding: 2.5%;
+}
+
+.info-wrap__body__item__icon {
+  background-color: #AAABAB;
+  border-radius: 50%;
+  width: 8.25rem;
+  height: 8.25rem;
+  margin: 0 auto;
+  display: flex;
+  /* icon内のi要素に対してフレックスボックスを指定 */
+  justify-content: center;
+  /* 横軸を基準に左右中央 */
+  align-items: center;
+  /* 縦軸を基準に上下中央 */
+}
+
+.info-wrap__body__item__icon i {
+  font-size: 4rem;
+  color: #fff;
+}
+
+.info-wrap__body__item__ttl {
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.info-wrap__body__item__ttl h3 {
+  font-size: 1rem;
+}
+
+.facility{
+  background-color: #fff;
+}
+
+.facility-wrap__ttl {
+  text-align: center;
+  font-size: 2rem;
+  color: #1D4763;
+  margin-bottom: 10%;
+}
+
+.facility-wrap__con__block {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 7%;
+  background-color: #CAE5D3;
+  border-radius: 25px;
+}
+
+.facility-wrap__con__block:nth-of-type(2n) {
+  flex-direction: row-reverse;
+  /* 疑似クラスを指定、偶数の要素にブロックの向きを変更させる */
+}
+.facility-wrap__con__block__img {
+  width: 50%;
+  aspect-ratio: 5/3;
+}
+
+.facility-wrap__con__block__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 親要素のボックス全体を埋めながら、アスペクト比を維持するようにサイズ変更 */
+  border-radius: 25px 0 0 25px;
+}
+
+.facility-wrap__con__block__txt {
+  width: 45%;
+  margin-right: 2.5%;
+}
+
+.facility-wrap__con__block__txt h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 3%;
+}
+
+.facility-wrap__con__block__txt p {
+  font-size: 1rem;
+  line-height: 2;
+  margin-top: 5%;
+}
+
+.facility-wrap__con__block:nth-of-type(2n) .facility-wrap__con__block__img img {
+  border-radius: 0 25px 25px 0;
+}
+
+.facility-wrap__con__block:nth-of-type(2n) .facility-wrap__con__block__txt {
+  margin-left: 2.5%;
+}
