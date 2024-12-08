@@ -24,6 +24,14 @@
   padding: 2.5%;
 }
 
+.info-wrap__body__item a {
+  text-decoration: none;
+}
+
+.info-wrap__body__item a:hover {
+  transform: scale(1.05);
+}
+
 .info-wrap__body__item__icon {
   background-color: #AAABAB;
   border-radius: 50%;
@@ -69,7 +77,7 @@
 }
 
 .treat-wrap__body__block__img{
-  aspect-ratio: 5 / 2;
+  aspect-ratio: 9 / 4;
 }
 
 .treat-wrap__body__block__img img{

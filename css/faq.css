@@ -1,1 +1,85 @@
 @charset "UTF-8";
+
+.faq-wrap{
+  padding-top: 2%;
+}
+
+
+.faq-wrap__body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.5%;
+}
+
+.faq-wrap__body__list {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  font-size: 1rem;
+}
+
+.faq-wrap__body__list__item {
+  position: relative;
+  margin: 0 0 5%;
+  background-color: #fff;
+  border-radius: 5rem;
+  padding: 1.75% 3.5%;
+  border: solid 1px #3E3A3A;
+}
+
+.faq-wrap__body__list__item__tog {
+  display: none;
+  /* input要素のボックスを非表示 */
+}
+
+.faq-wrap__body__list__item__tog:checked+.faq-wrap__body__list__item__ttl+.faq-wrap__body__list__item__con {
+  max-height: 500px;
+  transition: all 1.5s;
+}
+
+/* 疑似クラスを指定してラジオボタン・チェックボックス・オプションボタン要素がチェックされているまたはオンの状態 */
+
+.faq-wrap__body__list__item__tog:checked+.faq-wrap__body__list__item__ttl::before {
+  transform: rotate(90deg);
+  /* input要素がチェックされた状態の場合ttl::beforeが回転する角度 */
+}
+
+.faq-wrap__body__list__item__ttl,
+.faq-wrap__body__list__item__con {
+  transform: translate(0);
+  /* 要素の配置を水平方向・垂直方向ともに0 */
+  transition: all 0.3s;
+}
+
+.faq-wrap__body__list__item__ttl {
+  display: block;
+  font-weight: 500;
+}
+
+.faq-wrap__body__list__item__ttl::after,
+.faq-wrap__body__list__item__ttl::before {
+  content: "";
+  position: absolute;
+  right: 0.35rem;
+  top: 0.35rem;
+  width: 2.5px;
+  height: 17.5px;
+  background-color: #3E3A3A;
+  transition: all 0.3s;
+}
+
+.faq-wrap__body__list__item__ttl::after {
+  transform: rotate(90deg);
+}
+
+.faq-wrap__body__list__item__con {
+  max-height: 0;
+  /* input要素がチェックされていない場合の最大高さ、チェックされていれば500になる */
+  overflow: hidden;
+  /* 指定した高さに収まらない部分は非表示 */
+}
+
+.faq-wrap__body__list__item__con p {
+  padding: 1% 0 1%;
+  font-weight: 500;
+}

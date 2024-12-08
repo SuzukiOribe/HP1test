@@ -115,6 +115,14 @@
   padding: 2.5%;
 }
 
+.info-wrap__body__item a {
+  text-decoration: none;
+}
+
+.info-wrap__body__item a:hover {
+  transform: scale(1.05);
+}
+
 .info-wrap__body__item__icon {
   background-color: #fff;
   border-radius: 50%;

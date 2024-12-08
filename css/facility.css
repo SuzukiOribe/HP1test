@@ -25,6 +25,14 @@
   padding: 2.5%;
 }
 
+.info-wrap__body__item a {
+  text-decoration: none;
+}
+
+.info-wrap__body__item a:hover {
+  transform: scale(1.05);
+}
+
 .info-wrap__body__item__icon {
   background-color: #AAABAB;
   border-radius: 50%;
@@ -57,18 +65,24 @@
   background-color: #fff;
 }
 
+.facility-wrap{
+  padding-top: 0;
+}
+
 .facility-wrap__ttl {
   text-align: center;
   font-size: 2rem;
   color: #1D4763;
-  margin-bottom: 10%;
+  margin-top: 10%;
+  margin-bottom: 7%;
 }
 
 .facility-wrap__con__block {
   display: flex;
   justify-content: space-between;
+  height: 250px;
   /* align-items: center; */
-  margin-top: 7%;
+  margin-bottom: 8%;
   background-color: #CAE5D3;
   border-radius: 25px;
 }
@@ -77,9 +91,10 @@
   flex-direction: row-reverse;
   /* 疑似クラスを指定、偶数の要素にブロックの向きを変更させる */
 }
+
 .facility-wrap__con__block__img {
   width: 50%;
-  aspect-ratio: 5/3;
+  /* aspect-ratio: 5/3; */
 }
 
 .facility-wrap__con__block__img img {
@@ -97,7 +112,7 @@
 
 .facility-wrap__con__block__txt h3 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 3%;
 }
 

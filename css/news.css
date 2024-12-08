@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+.news-wrap{
+  padding-top: 2%;
+}
+
 .news-wrap__body__list__item {
   background-color: #fff;
   border-bottom: solid 1px #3E3A3A;
