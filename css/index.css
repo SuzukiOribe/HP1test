@@ -140,7 +140,7 @@
 }
 
 .info-wrap__body__item__ttl {
-  margin-top: 2.5%;
+  margin-top: 7%;
   text-align: center;
 }
 
@@ -302,20 +302,23 @@
 .map-wrap__btn__list__web {
   margin-top: 5%;
   margin-bottom: 3%;
+  width: 50%;
 }
 
 .map-wrap__btn__list__web a {
   text-decoration: unset;
   display: block;
   position: relative;
+  width: 100%;
 }
 
 .map-wrap__btn__list__web__web {
   position: relative;
   color: #fff;
   font-size: 125%;
-  max-width: 120px;
-  padding: 0.4rem 1rem 0.2rem 3rem;
+  width: 70%;
+  text-align: center;
+  padding: 2.5% 15%;
   border: solid 2px#fff;
   border-radius: 30px;
   background-color: #9CC9E5;
@@ -339,7 +342,7 @@
   position: absolute;
   bottom: 50%;
   left: 50%;
-  transform: translateY(-40%) translateX(-140%);
+  transform: translateY(-50%) translateX(-50%);
   white-space: nowrap;
   width: fit-content;
   font-size: 70%;
