@@ -12,9 +12,9 @@
 
 .top-wrap{
   max-width: 1400px;
-  width: 85%;
-  height: 25vh;
-  margin: 0 auto;
+  /* width: 85%; */
+  height: 40vh;
+  /* margin: 0 auto; */
 }
 
 .top-wrap__left__ttl{
@@ -22,7 +22,7 @@
   writing-mode: vertical-rl;
   margin-left: 17%;
   position: absolute;
-  bottom: 2%;
+  bottom: 10%;
   display: flex;
   justify-content: space-between;
 }
@@ -46,7 +46,7 @@
   text-decoration: unset;
   color: #fff;
   font-size: 1rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background-color: #9CC9E5;
   border-radius: 30px;
 }
@@ -66,6 +66,7 @@
 
 .news-wrap__con {
   width: 75%;  /* _innerで指定した80%の幅の75%を表示位置に指定 */
+  font-size: 1rem;
 }
 
 .news-wrap__con__list__item {
@@ -93,6 +94,7 @@
 
 .info-wrap {
   text-align: center;
+  padding-bottom: 1%;
 }
 
 .info-wrap__ttl h2 {
@@ -145,7 +147,7 @@
 }
 
 .info-wrap__body__item__ttl h3 {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
 }
 
 .greet {
@@ -154,8 +156,8 @@
 
 .__inner__sub {
   display: flex;
-  height: 350px;
-  width: 70%;
+  height: 450px;
+  width: 80%;
   margin: 0 auto;
   padding: 7% 0;
   bottom: 0px;
@@ -178,7 +180,9 @@
 
 .greet-wrap__left {
   background-color: #fff;
-  margin-top: 5%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .greet-wrap__left__txt {
@@ -187,7 +191,8 @@
 }
 
 .f-btn{
-  margin-top:30px;
+  margin-top:auto;
+  padding-top: 100px;
 }
 
 .greet-wrap__right {
@@ -206,7 +211,9 @@
 
 .fea-wrap__left {
   background-color: #fff;
-  margin-top: 5%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .fea-wrap__left__txt {
@@ -234,7 +241,7 @@
 }
 
 .__inner__sub:nth-of-type(2n) .f-btn{
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .__inner__sub:nth-of-type(2n) .fea-wrap__item {

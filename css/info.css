@@ -63,7 +63,7 @@
 .treat-wrap{
   display: flex;
   margin-left: 0;
-  width: 72%;
+  width: 90%;
   margin: 7% 0 13%;
 }
 
@@ -73,11 +73,11 @@
   /* justify-content: space-between; */
   /* align-items: center; */
   padding: 3.5% 0 0 0;
-  height: 320px;
+  height: 500px;
 }
 
 .treat-wrap__body__block__img{
-  aspect-ratio: 9 / 4;
+  aspect-ratio: 5 / 3;
 }
 
 .treat-wrap__body__block__img img{
@@ -100,17 +100,17 @@
 }
 
 .treat-wrap__body__block__txt__ttl__icon{
-  margin-right: 15px;
+  margin-right: 25px;
 }
 
 
 .treat-wrap__body__block__txt i{
   background-color: #CAE5D3;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 3rem;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
   margin: 0 auto;
   display: flex;
   /* icon内のi要素に対してフレックスボックスを指定 */

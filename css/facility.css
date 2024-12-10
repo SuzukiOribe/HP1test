@@ -80,7 +80,7 @@
 .facility-wrap__con__block {
   display: flex;
   justify-content: space-between;
-  height: 250px;
+  height: 300px;
   /* align-items: center; */
   margin-bottom: 8%;
   background-color: #CAE5D3;
@@ -106,7 +106,9 @@
 }
 
 .facility-wrap__con__block__txt {
-  width: 45%;
+  width: 50%;
+  margin-top: 2%;
+  margin-left: 5%;
   margin-right: 2.5%;
 }
 
@@ -127,5 +129,6 @@
 }
 
 .facility-wrap__con__block:nth-of-type(2n) .facility-wrap__con__block__txt {
-  margin-left: 2.5%;
+  margin-left: 5%;
+  margin-right: 2.5%;
 }
