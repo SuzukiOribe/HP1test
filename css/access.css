@@ -106,7 +106,7 @@
 .map-wrap__btn__list__web {
   margin-top: 5%;
   margin-bottom: 3%;
-  width: 50%;
+  width: 70%;
 }
 
 .map-wrap__btn__list__web a {
@@ -120,7 +120,6 @@
   position: relative;
   color: #fff;
   font-size: 125%;
-  width: 70%;
   text-align: center;
   padding: 2.5% 15%;
   border: solid 2px#fff;
@@ -133,13 +132,13 @@
   color: #9cc9e5;
   background-color: #fff;
   border: solid 2px #9cc9e5;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 /* .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__comment { */
-  /* color: #fff; */
-  /* background-color: #9CC9E5; */
-  /* transition: all 0.2s; */
+/* color: #fff; */
+/* background-color: #9CC9E5; */
+/* transition: all 0.2s; */
 /* } */
 
 .map-wrap__btn__list__web__comment {
@@ -187,17 +186,17 @@
 }
 
 /* .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__comment::before { */
-  /* color: #fff; */
-  /* background-color: #9CC9E5; */
-  /* border: solid 2px #9CC9E5; */
-  /* transition: all 0.2s; */
+/* color: #fff; */
+/* background-color: #9CC9E5; */
+/* border: solid 2px #9CC9E5; */
+/* transition: all 0.2s; */
 /* } */
 
 /* .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__comment::after { */
-  /* color: #fff; */
-  /* background-color: #9CC9E5; */
-  /* border: solid 2px #9CC9E5; */
-  /* transition: all 0.2s; */
+/* color: #fff; */
+/* background-color: #9CC9E5; */
+/* border: solid 2px #9CC9E5; */
+/* transition: all 0.2s; */
 /* } */
 
 .map-wrap__btn__list__tel a {

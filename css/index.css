@@ -13,18 +13,26 @@
 .top-wrap{
   max-width: 1400px;
   /* width: 85%; */
-  height: 40vh;
+  height: 60vh;
   /* margin: 0 auto; */
+}
+
+.top-wrap__left{
+  height: 60vh;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .top-wrap__left__ttl{
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  margin-left: 17%;
-  position: absolute;
-  bottom: 10%;
-  display: flex;
-  justify-content: space-between;
+  /* margin-left: 17%; */
+  /* position: absolute; */
+  /* bottom: 10%; */
+  /* display: flex; */
+  /* justify-content: space-between; */
 }
 
 .top-wrap__left__ttl h1{
@@ -55,6 +63,7 @@
   background-color: #fff;
   color: #9CC9E5;
   border: solid 2.5px #9CC9E5;
+  transition: all 0.3s;
 }
 
 .s-ttl__1 {
@@ -123,6 +132,7 @@
 
 .info-wrap__body__item a:hover {
   transform: scale(1.05);
+  transition: all 0.3s;
 }
 
 .info-wrap__body__item__icon {
@@ -176,12 +186,16 @@
 .greet-wrap__item{
   background-color: #fff;
   padding-right: 5%;
+  display: flex;
+  align-items: center;
 }
 
 .greet-wrap__left {
   background-color: #fff;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -192,7 +206,7 @@
 
 .f-btn{
   margin-top:auto;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .greet-wrap__right {
@@ -211,8 +225,8 @@
 
 .fea-wrap__left {
   background-color: #fff;
-  margin-top: 10%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -240,13 +254,11 @@
   margin: 0 0 0 auto;
 }
 
-.__inner__sub:nth-of-type(2n) .f-btn{
-  margin-top: 30px;
-}
-
 .__inner__sub:nth-of-type(2n) .fea-wrap__item {
   background-color: #fff;
   padding-left: 5%;
+  display: flex;
+  align-items: center;
 }
 
 .__inner__sub:nth-of-type(2n) .fea-wrap__right img {
@@ -309,7 +321,7 @@
 .map-wrap__btn__list__web {
   margin-top: 5%;
   margin-bottom: 3%;
-  width: 50%;
+  width: 70%;
 }
 
 .map-wrap__btn__list__web a {
@@ -323,7 +335,6 @@
   position: relative;
   color: #fff;
   font-size: 125%;
-  width: 70%;
   text-align: center;
   padding: 2.5% 15%;
   border: solid 2px#fff;
@@ -336,7 +347,7 @@
   color: #9cc9e5;
   background-color: #fff;
   border: solid 2px #9cc9e5;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 /* .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__comment { */
