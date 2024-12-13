@@ -355,8 +355,8 @@
   content: "";
   position: absolute;
   display: inline-block;
-  margin-top: 10px;
-  margin-left: 15%;
+  /* margin-top: 10px; */
+  /* margin-left: 15%; */
   color: #fff;
   width: 0.75em;
   height: 0.75em;
@@ -365,6 +365,8 @@
   border-bottom: 0;
   box-sizing: border-box;
   transform: translateX(-25%) rotate(45deg);
+  top: 37.5%;
+  left: 85%;
 }
 
 .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__web {
