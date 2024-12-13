@@ -91,6 +91,28 @@ body{
   border-radius: 30px ;
   background-color: #9CC9E5;
   z-index: 0;
+  display: flex;
+}
+
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  line-height: 1;
+  margin-top: 10%;
+  margin-left: 1%;
+  position: relative;
+  width: 0.7em;
+  height: 0.7em;
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+.arrow:hover{
+  color: #9CC9E5;
 }
 
 .header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__web {
@@ -99,6 +121,42 @@ body{
   border: solid 2px #9cc9e5;
   transition: all 0.2s;
 }
+
+
+
+.arrow2 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  line-height: 1;
+  margin-left: 1%;
+  position: relative;
+  width: 0.75em;
+  height: 0.75em;
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+.arrow3 {
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  line-height: 1;
+  margin-left: 1%;
+  position: relative;
+  width: 0.75em;
+  height: 0.75em;
+  border: 2px solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  box-sizing: border-box;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+
 
 /* .header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__comment { */
   /* color: #fff; */

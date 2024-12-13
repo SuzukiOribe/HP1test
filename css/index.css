@@ -22,7 +22,7 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .top-wrap__left__ttl{

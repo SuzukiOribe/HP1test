@@ -91,13 +91,16 @@
 
 .treat-wrap__body__block__txt{
   margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .treat-wrap__body__block__txt__ttl{
   display: flex;
   align-items: center;
   margin-top: 5%;
-  margin-bottom: 7%;
+  margin-bottom: 13%;
 }
 
 .treat-wrap__body__block__txt__ttl__icon{
