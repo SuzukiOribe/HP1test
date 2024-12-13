@@ -66,6 +66,14 @@
   transition: all 0.3s;
 }
 
+.btn a:hover .arrow2{
+  border: solid 2px #9cc9e5;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.2s;
+}
+
+
 .s-ttl__1 {
   display: inline-block;  /* ブロックの横幅は内部要素に依存するように設定 */
   font-size: 2rem;
@@ -343,11 +351,34 @@
   z-index: 0;
 }
 
+.map-wrap__btn__list__web__web::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 15%;
+  color: #fff;
+  width: 0.75em;
+  height: 0.75em;
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateX(-25%) rotate(45deg);
+}
+
 .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__web {
   color: #9cc9e5;
   background-color: #fff;
   border: solid 2px #9cc9e5;
   transition: all 0.3s;
+}
+
+.map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__web::after {
+  border: solid 2px #9cc9e5;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.2s;
 }
 
 /* .map-wrap__btn__list__web a:hover .map-wrap__btn__list__web__comment { */
@@ -423,6 +454,13 @@
 
 .map-wrap__btn__list__tel a:hover {
   color: #9CC9E5;
+}
+
+.map-wrap__btn__list__web a:hover .arrow2{
+  border: solid 2px #9cc9e5;
+  border-left: 0;
+  border-bottom: 0;
+  transition: all 0.2s;
 }
 
 .map-wrap__block__sche {

@@ -111,14 +111,17 @@ body{
   transform: translateX(-25%) rotate(45deg);
 }
 
-.arrow:hover{
-  color: #9CC9E5;
-}
-
 .header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__web {
   color: #9cc9e5;
   background-color: #fff;
   border: solid 2px #9cc9e5;
+  transition: all 0.2s;
+}
+
+.header-wrap__btn__list__web a:hover .header-wrap__btn__list__web__web .arrow{
+  border: solid 2px #9cc9e5;
+  border-left: 0;
+  border-bottom: 0;
   transition: all 0.2s;
 }
 
